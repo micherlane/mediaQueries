@@ -41,7 +41,6 @@ main {
   justify-content: space-between;
   width: 20%;
   background-color: var(--white);
-  min-width: 180px;
 }
 
 .usuario-style {
@@ -113,6 +112,7 @@ main {
 video {
   width: 80%;
   height: 80%;
+  border-radius: 10px;
 }
 
 
@@ -121,10 +121,59 @@ video {
     flex-direction: column;
   }
 
+  .div-navegacao-style {
+    min-width: 148px;
+  }
+
   .informacoes-style {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  .nome-style {
+    font-size: 0.8rem;
+  }
+
+  .email-style {
+    font-size: 0.7rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .link-style a, .usuario-style .informacoes-style, .botao-style {
+    display: none;
+  }
+
+  .usuario-style {
+    height: inherit;
+    border-bottom: none;
+  }
+
+  .div-navegacao-style {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    min-width: 300px;
+  }
+
+  .div-navegacao-style, .container, .navegacao-style {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .div-video-style {
+    height: 100%;
+  }
+  
+  video {
+    width: 80%;
+    height: 80%;
+  }
 }

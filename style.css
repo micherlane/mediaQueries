@@ -40,6 +40,7 @@ main {
   justify-content: space-between;
   width: 20%;
   background-color: var(--white);
+  min-width: 180px;
 }
 
 .usuario-style {
@@ -48,6 +49,8 @@ main {
   border-bottom: 1px solid var(--grey);
   padding: 10px;
   height: 100px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .imagem-circular {
@@ -60,6 +63,10 @@ main {
 
 .nome-style {
   font-weight: bold;
+}
+
+.email-style {
+  font-size: 0.8rem;
 }
 
 .link-style {
@@ -99,5 +106,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+video {
+  width: 80%;
+  height: 80%;
 }
 
